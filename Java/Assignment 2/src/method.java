@@ -12,7 +12,11 @@ public class method {
 	}
 	
 	//Question 2:
-
+	
+	
+	
+	
+	
 	// Question 3:
 	public static void  Soduong(){
 		for(int i = 1; i <= 10; i++){
