@@ -6,60 +6,60 @@ import java.text.ParseException;
 public class inputFromConsole {
 
 	public static void main(String[] args) throws ParseException {
-		// //Question 1:
-		// System.out.println("Câu 1");
-		// System.out.println("Nhập vào 3 số nguyên bất kì :");
+		 //Question 1:
+		 System.out.println("Câu 1");
+		 System.out.println("Nhập vào 3 số nguyên bất kì :");
 		Scanner sc = new Scanner(System.in);
-		// System.out.print("Nhập số đầu tiên : ");
-		// int nb1 = sc.nextInt();
-		// System.out.print("Nhập số thứ hai : ");
-		// int nb2 = sc.nextInt();
-		// System.out.print("Nhập số thứ ba : ");
-		// int nb3 = sc.nextInt();
-		// System.out.println("Bạn đã nhập 3 số là : " + nb1 +", " + nb2 + ", "
-		// + nb3);
+		 System.out.print("Nhập số đầu tiên : ");
+		 int nb1 = sc.nextInt();
+		 System.out.print("Nhập số thứ hai : ");
+		 int nb2 = sc.nextInt();
+		 System.out.print("Nhập số thứ ba : ");
+		 int nb3 = sc.nextInt();
+		 System.out.println("Bạn đã nhập 3 số là : " + nb1 +", " + nb2 + ", "
+		 + nb3);
 
-		// //Question 2:
-		// System.out.println("Câu 2");
-		// System.out.println("Nhập vào 2 số thực bất kì :");
-		// System.out.print("Nhập số đầu tiên : ");
-		// float f1 = sc.nextFloat();
-		// System.out.print("Nhập số thứ hai : ");
-		// float f2 = sc.nextFloat();
-		// System.out.println("Bạn đã nhập 2 số là : " + f1 +", " + f2);
-		//
-		// // Question 3:
-		// System.out.println("Câu 3");
-		// System.out.print("Nhập họ: ");
-		// String strHo = sc.next();
-		// System.out.print("Nhập tên: ");
-		// String strTen = sc.next();
-		// System.out.println("Bạn đã nhập họ và tên là: " +strHo + " " +
-		// strTen);
-		//
-		// //Question 4:
-		// System.out.println("Câu 4");
-		// System.out.print("Nhập ngày sinh nhật của bạn : ");
-		// String dateIn = sc.next();
-		// SimpleDateFormat dateF = new SimpleDateFormat("dd/MM/yyyy");
-		// Date dateBD = dateF.parse(dateIn);
-		// System.out.println("Ngày sinh nhật của bạn là: " + dateBD);
+		 //Question 2:
+		 System.out.println("Câu 2");
+		 System.out.println("Nhập vào 2 số thực bất kì :");
+		 System.out.print("Nhập số đầu tiên : ");
+		 float f1 = sc.nextFloat();
+		 System.out.print("Nhập số thứ hai : ");
+		 float f2 = sc.nextFloat();
+		 System.out.println("Bạn đã nhập 2 số là : " + f1 +", " + f2);
+		
+		 // Question 3:
+		 System.out.println("Câu 3");
+		 System.out.print("Nhập họ: ");
+		 String strHo = sc.next();
+		 System.out.print("Nhập tên: ");
+		 String strTen = sc.next();
+		 System.out.println("Bạn đã nhập họ và tên là: " +strHo + " " +
+		 strTen);
+		
+		 //Question 4:
+		 System.out.println("Câu 4");
+		 System.out.print("Nhập ngày sinh nhật của bạn : ");
+		 String dateIn = sc.next();
+		 SimpleDateFormat dateF = new SimpleDateFormat("dd/MM/yyyy");
+		 Date dateBD = dateF.parse(dateIn);
+		 System.out.println("Ngày sinh nhật của bạn là: " + dateBD);
 
-//		// Question 5:
-//		createAcc();
-//
-//		// Question 6:
-//		createDept();
+		// Question 5:
+		createAcc();
+
+		// Question 6:
+		createDept();
 
 		// Question 7:
-		// System.out.println("Nhập 1 số chẵn: ");
-		// int inSoChan = sc.nextInt();
-		// if(inSoChan % 2==1){
-		// System.out.println("Vui lòng nhập số chắn");
-		// }
-		// else{
-		// System.out.println("Số chẵn là : " + inSoChan);
-		// }
+		 System.out.println("Nhập 1 số chẵn: ");
+		 int inSoChan = sc.nextInt();
+		 if(inSoChan % 2==1){
+		 System.out.println("Vui lòng nhập số chắn");
+		 }
+		 else{
+		 System.out.println("Số chẵn là : " + inSoChan);
+		 }
 
 		// Question 8:
 		
