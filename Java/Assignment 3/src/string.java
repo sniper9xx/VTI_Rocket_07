@@ -40,6 +40,9 @@ public class string {
 		
 		//Question 15: Revert string by word 
 		revertString();
+		
+		//Question 16
+		divString();
 
 	}
 	
@@ -187,5 +190,27 @@ public class string {
 		}
 	}
 	
-	
+	//Question 16
+	public static void divString(){
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Nhập 1 chuỗi nào đó!");
+		String value = scan.nextLine();
+		System.out.println("Nhập 1 số nguyên lớn hơn 0!");
+		int value1 = scan.nextInt();
+		String valueReplace = value.replace(" ", ""); // xoá tất cả các khoảng trắng trong xâu
+		if (valueReplace.length() % value1 == 0) { // nếu chia hết thì tiếp tục thực hiện		
+			int c = valueReplace.length()/value1; // c là số phần bằng nhau có n(value1) kí tự
+			// ta in từng phần trước
+			for (int i = 0; i < c; i++) {	
+				for (int j = 0; j < value1; j++) {
+					System.out.print(valueReplace.charAt((i*value1)+j));
+				}
+				System.out.print(" "); //ngăn giữa các phần bằng dấu cách
+			}
+		}
+		else{
+			System.out.println("KO");
+		}
+		
+	}
 }
