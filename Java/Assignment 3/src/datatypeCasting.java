@@ -6,14 +6,16 @@ public class datatypeCasting {
 
 	public static void main(String[] args) {
 		//Question 1 : Ép kiểu dữ liệu
-		Question1();
+//		Question1();
 		
 		//Question 2,3
 		Question23();
-		
-		//Question 4
-		div();
+//		
+//		//Question 4
+//		div();
 	}
+	
+	
 	
 	public static void Question1(){
 		System.out.println("Câu 1");
@@ -28,7 +30,16 @@ public class datatypeCasting {
 	public static void Question23() {
 		System.out.println("Câu 2");
 		Random rand = new Random();
-		int x = rand.nextInt(10000);
+		int x = rand.nextInt(99999);
+		//Cach 1:
+//		int hang = 100000;
+//		while(hang >=10){
+//			System.out.print(x/hang);
+//			x%=hang;
+//			hang/=10;
+//		}
+		//Cach 2
+		System.out.println();
 		if (1000 <= x && x < 10000) {
 			System.out.println("0" + x);
 		} else if (100 <= x && x < 1000) {

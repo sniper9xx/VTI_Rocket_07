@@ -8,10 +8,12 @@ public class objectsMethod {
 		deptArr();
 
 	}
+	
 	public static void deptArr(){
 		String dept[] = {"Marketing","Accounting", "Waiting room", "Boss of director", "Sale"};
 		Arrays.sort(dept); //Mảng theo alphabet (tăng dần)
 		System.out.println(Arrays.deepToString(dept));
 	}
+	
 
 }
