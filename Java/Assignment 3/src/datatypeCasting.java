@@ -6,13 +6,13 @@ public class datatypeCasting {
 
 	public static void main(String[] args) {
 		//Question 1 : Ép kiểu dữ liệu
-//		Question1();
+		Question1();
 		
 		//Question 2,3
 		Question23();
-//		
-//		//Question 4
-//		div();
+		
+		//Question 4
+		div();
 	}
 	
 	

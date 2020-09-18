@@ -3,43 +3,43 @@ import java.util.Scanner;
 public class string {
 
 	public static void main(String[] args) {
-		//Question 1
-		countString();
-		
-		//Question 2
-		concatString();
-		
-		//Question 3
-		Checked();
-
-		//Question 4
-		printName();
-		
-		//Question 5
-		fullName();
-		
-		//Question 6
-		splitFullName();
-		
-		//Question 7
-		isoName();
-		
-		//Question 10
-		stringCheck();
-		
-		//Question 11
-		find_a();
-		
-		//Question 12  giống câu 15
-		
-		//Question 13: String not contains digit
-		intStringCheck();
-		
-		//Question 14
-		replaceAcademy();
-		
-		//Question 15: Revert string by word 
-		revertString();
+//		//Question 1
+//		countString();
+//	
+//		//Question 2
+//		concatString();
+//		
+//		//Question 3
+//		Checked();
+//
+//		//Question 4
+//		printName();
+//		
+//		//Question 5
+//		fullName();
+//		
+//		//Question 6
+//		splitFullName();
+//		
+//		//Question 7
+//		isoName();
+//		
+//		//Question 10
+//		stringCheck();
+//		
+//		//Question 11
+//		find_a();
+//		
+//		//Question 12  giống câu 15
+//		
+//		//Question 13: String not contains digit
+//		intStringCheck();
+//		
+//		//Question 14
+//		replaceAcademy();
+//	
+//		//Question 15: Revert string by word 
+//		revertString("   i   am    developer     ");
 		
 		//Question 16
 		divString();
@@ -180,15 +180,40 @@ public class string {
 		}
 	
 	//Question 15
-	public static void revertString(){
-		Scanner scan = new Scanner(System.in);
-		System.out.println("Nhập 1 đoạn văn nào đó!");
-		String value = scan.nextLine();
-		String nameSplit[] = value.split(" "); //Khai báo mảng
-		for (int i = nameSplit.length -1 ; i >=0; i--) {
-			System.out.print(nameSplit[i]+ " ");
+		//Cách chưa tối ưu:
+//		public static void revertString(){
+//			Scanner scan = new Scanner(System.in);
+//			System.out.println("Nhập 1 đoạn văn nào đó!");
+//			String value = scan.nextLine();				
+//			String nameSplit[] = value.split(" ");
+//			//Khai báo mảng
+//			for (int i = nameSplit.length -1 ; i >=0; i--) {
+//				System.out.print(nameSplit[i] + " ");
+//			}		
+//		}
+		//Cách tối ưu:
+		public static void revertString(String s){
+			String split[] = s.split(" "); // Tạo 1 mảng 
+			String arr[] = new String[split.length]; //Tạo 1 mảng mới để lưu các giá trị khác null
+			int j =0; // biến chạy của arr[]
+			for (int i = split.length - 1; i >=0; i--) {
+				if (!"".equals(split[i])){ //so sánh giá trị các phần tử trong mảng arr[] khác null
+					arr[j] = split[i];	 // gán các phần tử của bảng split[] vào bảng arr[]
+					j++;
+				}
+			}
+			for (int i = 0; i < arr.length; i++) {
+				if (arr[i] != null) {
+					if (arr[i +1] != null) { // nếu giá trị cuối cùng trong mảng khác null thì in có " "
+						System.out.print(arr[i] + " " );
+					}
+					else{
+						System.out.print(arr[i]);
+					}
+				}
+			}
 		}
-	}
+		
 	
 	//Question 16
 	public static void divString(){
