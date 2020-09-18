@@ -30,6 +30,14 @@ public class string {
 		//Question 11
 		find_a();
 		
+		//Question 12  giống câu 15
+		
+		//Question 13: String not contains digit
+		intStringCheck();
+		
+		//Question 14
+		replaceAcademy();
+		
 		//Question 15: Revert string by word 
 		revertString();
 
@@ -153,8 +161,20 @@ public class string {
 		System.out.println(count);	
 	}
 	
-	//Question 12
-
+	//Question 13
+	public static void intStringCheck(){
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Nhập 1 chuỗi nào đó!");
+		boolean value = scan.hasNextInt();
+		System.out.println(value);	
+	}
+	
+	//Question 14
+		public static void replaceAcademy(){
+			String s = "VTI Academy";
+			String sReplace = s.replace("e", "*");
+			System.out.println(sReplace);
+		}
 	
 	//Question 15
 	public static void revertString(){
