@@ -1,4 +1,5 @@
 import java.util.Random;
+import java.util.Scanner;
 
 public class datatypeCasting {
 
@@ -9,7 +10,9 @@ public class datatypeCasting {
 		
 		//Question 2,3
 		Question23();
-
+		
+		//Question 4
+		div();
 	}
 	
 	public static void Question1(){
@@ -47,5 +50,15 @@ public class datatypeCasting {
 		} else {
 			System.out.println(y);
 		}
+	}
+	
+	public static void div(){
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Nhập số a: ");
+		int valuea = scan.nextInt();
+		System.out.println("Nhập số b: ");
+		int valueb = scan.nextInt();
+		float c = 1f*valuea/valueb;
+		System.out.println("Kết quả a/b = " + c);
 	}
 }
