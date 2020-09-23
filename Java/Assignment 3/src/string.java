@@ -3,43 +3,43 @@ import java.util.Scanner;
 public class string {
 
 	public static void main(String[] args) {
-//		//Question 1
-//		countString();
-//	
-//		//Question 2
-//		concatString();
-//		
-//		//Question 3
-//		Checked();
-//
-//		//Question 4
-//		printName();
-//		
-//		//Question 5
-//		fullName();
-//		
-//		//Question 6
-//		splitFullName();
-//		
-//		//Question 7
-//		isoName();
-//		
-//		//Question 10
-//		stringCheck();
-//		
-//		//Question 11
-//		find_a();
-//		
-//		//Question 12  giống câu 15
-//		
-//		//Question 13: String not contains digit
-//		intStringCheck();
-//		
-//		//Question 14
-//		replaceAcademy();
-//	
-//		//Question 15: Revert string by word 
-//		revertString("   i   am    developer     ");
+		//Question 1
+		countString();
+	
+		//Question 2
+		concatString();
+		
+		//Question 3
+		Checked();
+
+		//Question 4
+		printName();
+		
+		//Question 5
+		fullName();
+		
+		//Question 6
+		splitFullName();
+		
+		//Question 7
+		isoName();
+		
+		//Question 10
+		stringCheck();
+		
+		//Question 11
+		find_a();
+		
+		//Question 12  giống câu 15
+		
+		//Question 13: String not contains digit
+		intStringCheck();
+		
+		//Question 14
+		replaceAcademy();
+	
+		//Question 15: Revert string by word 
+		revertString("   i   am    developer     ");
 		
 		//Question 16
 		divString();

@@ -103,10 +103,10 @@ public class systemOutPrintf {
 		System.out.println("\n");
 
 		// //Question 4:
-		// Scanner sc = new Scanner(System.in);
-		// String name = sc.next();
-		// System.out.printf("Tên tôi là %s ", name + " và tôi đang độc thân");
-		// System.out.println("\n");
+		 Scanner sc = new Scanner(System.in);
+		 String name = sc.next();
+		 System.out.printf("Tên tôi là %s ", name + " và tôi đang độc thân");
+		 System.out.println("\n");
 
 		// Question 5:
 		Date date = new Date();
