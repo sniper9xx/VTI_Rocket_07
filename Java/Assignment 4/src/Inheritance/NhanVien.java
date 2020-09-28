@@ -21,5 +21,5 @@ public class NhanVien extends CanBo{
 		super.Mess();
 		System.out.println("Phòng ban: Kỹ sư");
 		System.out.println("Công việc:  "+ jobs);
-	}
+	}	
 }

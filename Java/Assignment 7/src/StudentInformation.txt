@@ -1,0 +1,9 @@
+Student 1 :
+	 Id : 1
+	 Ho va ten: dat
+Student 2 :
+	 Id : 2
+	 Ho va ten: sy
+Student 3 :
+	 Id : 3
+	 Ho va ten: binh

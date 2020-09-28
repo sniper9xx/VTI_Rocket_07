@@ -3,9 +3,9 @@ import java.util.Date;
 public class Program {
 	// Khoi tao ham main
 	// hàm main la những hàm mà khi chạy chương trình sẽ chạy hàm main đầu tiên
-	@SuppressWarnings("deprecation")
+
 	public static void main(String[] args) {
-		// Khoi tạo bang department
+
 		Department depart1 = new Department();
 		depart1.DepartmentID = 1;
 		depart1.DepartmentName = "Bán hàng";

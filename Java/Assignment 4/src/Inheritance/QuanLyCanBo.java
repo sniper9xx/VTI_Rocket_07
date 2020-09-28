@@ -4,23 +4,6 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class QuanLyCanBo {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		// 1.Thêm cán bộ
-		ThemCanBo();
-
-		// 2. Tìm kiếm theo họ tên
-		TimKiem();
-
-		// 3. Hiện danh sách cán bộ
-		ListCanBo();
-
-		// 4.Nhập vào tên cán bộ và xoá tên cán bộ đó
-		DeleteCanBo();
-
-	}
-
 	public static void ThemCanBo() {
 		System.out.println("Thêm cán bộ");
 		System.out.println("Nhập phòng ban cán bộ(Kỹ sư, Công nhân, Nhân viên)");
@@ -73,4 +56,21 @@ public class QuanLyCanBo {
 			/////////////////
 		}
 	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// 1.Thêm cán bộ
+		ThemCanBo();
+
+		// 2. Tìm kiếm theo họ tên
+		TimKiem();
+
+		// 3. Hiện danh sách cán bộ
+		ListCanBo();
+
+		// 4.Nhập vào tên cán bộ và xoá tên cán bộ đó
+		DeleteCanBo();
+
+	}
+
+	
 }

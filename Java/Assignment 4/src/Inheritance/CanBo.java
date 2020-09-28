@@ -49,13 +49,12 @@ public class CanBo {
 
 		System.out.println("Nhập địa chỉ cán bộ: ");
 		address = scaner.next();
-
 	}
 
 	// Hiển thị
 	public void Mess() {
 		System.out.println();
-		System.out.println("Thông tin cán bộ vừa được thêm mới: ");
+		System.out.println("Thông tin cán bộ vừa được thêm mới");
 		System.out.println("Tên cán bộ: " + name);
 		System.out.println("Tuổi cán bộ: " + age);
 		System.out.println("Giới tính cán bộ: " + gender);
