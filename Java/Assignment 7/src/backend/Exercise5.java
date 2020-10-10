@@ -1,3 +1,4 @@
+package backend;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
@@ -8,13 +9,14 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.Scanner;
 
-public class Student {
+public class Exercise5 {
 
 	private static int id = 0;
 	private String name;
 	// Đường dẫn file
 	private final String url = "C:\\Users\\Admin\\Desktop\\VTI_Rocket_07\\Java\\Assignment 7\\src\\StudentInformation.txt";
 
+	//Question 1:
 	// Viết 3 student này ra file tên là StudentInformation.txt
 	public void Write3Student() {
 		try {
@@ -53,4 +55,8 @@ public class Student {
 			System.out.println(line);
 		}
 	}
+	
+	//Question 2:
+	
+	
 }

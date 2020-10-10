@@ -30,6 +30,5 @@ public class DienThoaiThongMinh extends Phone {
 	@Override
 	public void tanCong() {
 		System.out.println("Điện thoại thông minh tấn công");	
-	}
-	
+	}	
 }

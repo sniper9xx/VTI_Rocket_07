@@ -3,7 +3,7 @@ Student 1 :
 	 Ho va ten: dat
 Student 2 :
 	 Id : 2
-	 Ho va ten: nam
+	 Ho va ten: binh
 Student 3 :
 	 Id : 3
-	 Ho va ten: binh
+	 Ho va ten: sy
