@@ -1,0 +1,62 @@
+#doanvan {
+    background-color:khaki;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+.doanvan {
+    padding: 10px;
+    margin: 0;
+    border-bottom:1px solid blue;
+    width: 300px;
+}
+
+#doan1 {
+    color: blue;
+    margin: 0 auto;
+}
+
+#doan2 {
+    color: red;
+    margin: 0 auto; 
+}
+
+#doan3 {
+    color:green;
+    margin: 0 auto;
+}
+
+/* 
+    bai 2 
+*/
+#bg-for {
+    background: silver;
+    position: static;
+}
+
+#for, #next {
+    position: absolute; 
+    right: 50%;
+}
+
+#tong {
+    position: absolute;
+    left: 50%;
+}
+
+#cong-ty-hoa-tuoi {
+
+}
+
+#img-hoatuoi {
+  
+    width: 300px;
+    height: 400px;
+    margin-right:50% ;
+}
+
+#bang-hoatuoi {
+    
+}

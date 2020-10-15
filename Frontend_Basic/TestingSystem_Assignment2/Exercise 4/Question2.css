@@ -1,0 +1,26 @@
+.general {
+    width: 30%;
+    display: inline-block;
+    margin-left: 50px;
+}
+
+button {
+    background-color: royalblue;
+    float: right;
+    height: 30px;
+    width: 40;
+    border-radius: 10px;
+}
+
+button:hover{
+    background-color: tomato;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+body {
+    background: -webkit-linear-gradient(left,#FFD700,#FFFACD);
+}
