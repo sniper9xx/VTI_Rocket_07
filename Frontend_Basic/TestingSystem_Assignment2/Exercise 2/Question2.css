@@ -46,17 +46,69 @@ h1 {
     left: 50%;
 }
 
+/*
+    bai 3
+*/
 #cong-ty-hoa-tuoi {
-
+   margin: 0;
+   position: static;
 }
 
-#img-hoatuoi {
-  
+#img-hoatuoi {  /* chua toi uu neu thu nhap trinh duyet */
+    display: inline-block;
     width: 300px;
-    height: 400px;
-    margin-right:50% ;
+    height: 200px;
+    position: absolute;
+    right: 50%; 
 }
 
 #bang-hoatuoi {
-    
+    display: inline-block;
+    height:200px;
+    width: 500px;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+}
+
+/*
+    bai 4
+*/
+
+#back-mon-ngon {
+    background: darksalmon;
+    position: static;
+}
+
+table {
+    padding: 0;
+}
+
+table tr:nth-child(odd){
+    background-color: #ff6666;
+}
+table tr:nth-child(even){
+    background-color:white;
+}
+
+table tr:nth-child(1){
+    background-color: #cc0000;
+}
+
+#img-mon-ngon {
+    display: inline-block;
+    position: absolute;
+    right: 50%; 
+
+}
+
+#bang-mon-ngon {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+}
+
+#taeyeon{
+    width: 300px;
+    height: 250px;
 }
