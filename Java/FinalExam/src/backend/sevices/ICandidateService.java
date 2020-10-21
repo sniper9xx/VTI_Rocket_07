@@ -12,5 +12,4 @@ public interface ICandidateService {
 
 	boolean errorLogin(String email, String pass) throws SQLException;
 
-
 }

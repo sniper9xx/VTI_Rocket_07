@@ -49,7 +49,7 @@ public class CandidateReponsitory implements ICandidateReponsitory{
 		ps.setString(4, phone);
 		ps.setString(5, email);
 		ps.setString(6, graduationRank);
-		int effectRows = ps.executeUpdate();
+		int effectRows = ps.executeUpdate(); 
 		if (effectRows == 1)
 			System.out.println("Tạo mới tài khoản FresherCandidate thành công!");
 		jdbcUtils.disconnect();
@@ -59,7 +59,7 @@ public class CandidateReponsitory implements ICandidateReponsitory{
 	@Override
 	public boolean errorLogin(String email, String pass) throws SQLException {
 		Connection connect = jdbcUtils.getConnection();
-		String mySqlQuery = "select * from `user` where email = ? and pass = ?";
+		String mySqlQuery = "select * from `Candidate` where email = ? and pass = ?";
 		PreparedStatement ps = connect.prepareStatement(mySqlQuery);
 		ps.setString(1, email);
 		ps.setString(2, pass);
@@ -69,7 +69,6 @@ public class CandidateReponsitory implements ICandidateReponsitory{
 			check = true;
 		jdbcUtils.disconnect();
 		return check;
-
 	}
 
 }

@@ -19,8 +19,6 @@ public class CandidateService implements ICandidateService {
 		boolean check = false;
 		if (phone.length() >= 9 && phone.length() <= 12) {
 			check = true;
-		} else {
-			System.out.println("Nhap so dien thoai co tu 9 den 12 so");
 		}
 		return check;
 	}
@@ -61,6 +59,7 @@ public class CandidateService implements ICandidateService {
 	public boolean checkEmail(String email) {
 		boolean check = false;
 		Pattern p = Pattern.compile("^[a-zA-Z]+(\\.[a-zA-Z]+)@[a-zA-Z]{3}(\\.[a-zA-Z]{3})(\\.[a-zA-Z]{2})");
+									//nguyen.vannam@vti.com.vn) 
 		if (p.matcher(email).find()) {
 			check = true;
 		}
@@ -74,8 +73,6 @@ public class CandidateService implements ICandidateService {
 
 		if (pass.length() >= 6 && pass.length() <= 12) {
 			check = true;
-		} else {
-			System.out.println("Nhap password tu 6 den 12 ki tu");
 		}
 
 		for (int i = 0; i < pass.length(); i++) {
@@ -112,7 +109,7 @@ public class CandidateService implements ICandidateService {
 			if (checkPass(pass1)) {
 				check = true;
 			} else {
-				System.out.println("Nhap password it nhat co 1 chu cai viet hoa");
+				System.out.println("Nhap password tu 6 den 12 ki tu,it nhat co 1 chu cai viet hoa,");
 				pass1 = ScannerUtils.inputString();
 			}
 		}

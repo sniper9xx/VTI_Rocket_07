@@ -3,7 +3,7 @@ package utils;
 import java.util.Scanner;
 
 public class ScannerUtils {
-	// Declare 1 global variable
+
 	private static Scanner scan = new Scanner(System.in);
 
 	// String processing
