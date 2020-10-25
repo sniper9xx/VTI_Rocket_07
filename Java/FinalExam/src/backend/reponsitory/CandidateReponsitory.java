@@ -29,7 +29,7 @@ public class CandidateReponsitory implements ICandidateReponsitory{
 		ps.setString(5, email);
 		ps.setInt(6, expInYear);
 		ps.setString(7, proSkill);
-		int effectRows = ps.executeUpdate();
+		int effectRows = ps.executeUpdate(); 
 		if (effectRows == 1)
 			System.out.println("Tạo mới tài khoản ExperienceCandidate thành công!");
 		jdbcUtils.disconnect();

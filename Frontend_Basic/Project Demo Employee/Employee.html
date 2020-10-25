@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee</title>
+    <link rel="stylesheet" href="Employee.css">
+</head>
+employeeAdd()
+
+<body>
+    <header>
+        <section>
+            <span id="Employee" onclick="home()">Manager &nbsp;Employee</span>
+            <nav>
+                <a onclick="employeeAdd()" href="#ADD"> <b>ADD</b></a>
+                <a onclick="saveUpEmployee()" href="#UPDATE"><b>UPDATE</b></a>
+                <a onclick="listViewEmployee()" href="#LISTVIEW"><b>LISTVIEW</b></a>
+            </nav>
+        </section>
+    </header>
+    <div id="main">
+        <table id="table-add" border-top="1px" bordercolor="black" cellpadding="10" cellspacing="10px">
+            <tr style="font-size: 20px;">
+                <td width="50px"><b>STT</b></td>
+                <td width="200px"><b>Fullname</b></td>
+                <td width="100px"><b>Age</b></td>
+                <td width="100px"><b>Gender</b></td>
+                <td width="100px"><b>Department</b></td>
+                <td width="250px"><b>Email</b></td>
+                <td width="150px"><b>Phone</b></td>
+                <td width="100px"><b>Control</b></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Hồ Thành Đạt</td>
+                <td>18</td>
+                <td>Male</td>
+                <td>Developer</td>
+                <td>dat66060nuce@gmail.com</td>
+                <td>034-434-3895</td>
+                <td>
+                    <img id="icon-save" src="icon-save.jpg" alt="icon-save" onclick="saveRow()" style="visibility: hidden;">
+                    <img id="icon-update" src="icon-update.jpg" alt="icon-update" onclick="updateRow()">
+                    <img id="icon-delete" src="icon-delete.jpg" alt="icon-delete" onclick="deleteRow(this)">
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Nguyễn Văn Sỹ</td>
+                <td>20</td>
+                <td>Male</td>
+                <td>PM</td>
+                <td>sy129060nuce@gmail.com</td>
+                <td>097-445-287</td>
+                <td>
+                    <img id="icon-save" src="icon-save.jpg" alt="icon-save" onclick="saveRow()" style="visibility: hidden;">
+                    <img id="icon-update" src="icon-update.jpg" alt="icon-update" onclick="updateRow()">
+                    <img id="icon-delete" src="icon-delete.jpg" alt="icon-delete" onclick="deleteRow(this)">
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Nguyễn Văn Bình</td>
+                <td>21</td>
+                <td>Female</td>
+                <td>PM</td>
+                <td>binh99960nuce@gmail.com</td>
+                <td>097-715-5562</td>
+                <td>
+                    <img id="icon-save" src="icon-save.jpg" alt="icon-save" onclick="saveRow()" style="visibility: hidden;">
+                    <img id="icon-update" src="icon-update.jpg" alt="icon-update" onclick=" updateRow()">
+                    <img id="icon-delete" src="icon-delete.jpg" alt="icon-delete" onclick="deleteRow(this)">
+                </td>
+            </tr>
+        </table>
+
+        <!-- Form Update Employee -->
+        <form id="updateEmployee" style="visibility: hidden;">
+            <h2>UPDATE EMPLOYEE</h2>
+            <div id="label">
+                <div class="in1">
+                    <label>Fullname</label>
+                    <input type="text" id="upFullname">
+                </div>
+                <br />
+                <div class="in2">
+                    <label>Age</label>
+                    <input type="text" id="upAge">
+                </div>
+                <br />
+                <div class="in3">
+                    <label>Gender</label>
+                    <select id="upGender">
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Unknown</option>
+                    </select>
+                </div>
+                <br />
+                <div class="in4">
+                    <label>Department</label>
+                    <input type="text" id="upDepartment">
+                </div>
+                <br />
+                <div class="in5">
+                    <label>Email</label>
+                    <input type="text" id="upEmail">
+                </div>
+                <br />
+                <div class="in6">
+                    <label>Phone</label>
+                    <input type="text" id="upPhone">
+                </div>
+            </div>
+            <input id="saveUp" onclick="updateRows()" type="button" value="Save">
+        </form>
+        <!-- Form Add Employee -->
+        <form id="addEmployee" style="visibility: hidden;">
+            <h2>ADD EMPLOYEE</h2>
+            <div id="label">
+                <div class="in1">
+                    <label>Fullname</label>
+                    <input type="text" id="addFullname">
+                </div>
+                <br />
+                <div class="in2">
+                    <label>Age</label>
+                    <input type="text" id="addAge">
+                </div>
+                <br />
+                <div class="in3">
+                    <label>Gender</label>
+                    <select id="addGender">
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Unknown</option>
+                    </select>
+                </div>
+                <br />
+                <div class="in4">
+                    <label>Department</label>
+                    <input type="text" id="addDepartment">
+                </div>
+                <br />
+                <div class="in5">
+                    <label>Email</label>
+                    <input type="text" id="addEmail">
+                </div>
+                <br />
+                <div class="in6">
+                    <label>Phone</label>
+                    <input type="text" id="addPhone">
+                </div>
+            </div>
+            <input id="save" onclick="saveEmployee()" type="button" value="Save">
+            <input id="reset" type="reset" value="Reset">
+        </form>
+    </div>
+    <!-- <footer>
+                <div id="text-footer">vti.academy.edu.vn </div>
+            </footer> -->
+
+    <script src="Employee.js"></script>
+</body>
+
+</html>

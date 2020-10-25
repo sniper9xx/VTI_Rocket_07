@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Open Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open Sans:wght@700&display=swap');
+
+
+body{
+    margin:0px; 
+    padding:0px; 
+    font-family: 'Open Sans', sans-serif;
+    background: -webkit-linear-gradient(left,khaki, white );
+}
+
+/*
+    header
+*/
+header{
+    background-color:#fde428; 
+    margin-bottom:30px;
+    width: 100%;
+    position: fixed;
+    top:0px
+}
+
+nav a{
+    text-decoration:none;
+    color:#002e5b; 
+    font-size:16px; 
+    padding: 32px 35px; 
+    display:inline-block; 
+}
+
+nav a:hover{
+    color: royalblue;
+}
+
+#Employee {
+    font-size:25px; 
+    text-transform:uppercase; 
+    color:#002e5b; 
+    font-weight:bold;
+    float:left;
+    padding: 25px; 
+    margin-left:15%;  
+}
+
+#banner {
+    float: right;
+    width: 250px;
+}
+
+/*
+    table
+*/
+
+#main {
+    position: static;
+    margin-top: 100px;
+}
+
+table {
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    position: static;
+}
+
+#icon-delete, #icon-update{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+
+#icon-save {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+}
+
+table tr:not(:first-child) {
+    cursor: pointer;
+    transition: all .0.25 ease-in-out;
+}
+
+table tr:not(:first-child):hover {
+    color:cadetblue;
+    font-weight: bold;
+}
+
+/*
+    Form
+*/
+
+form {
+    position: absolute;
+    left: 40%;
+    margin-top: 30px;
+    width: 400px;
+    height: 400px;
+}
+
+form h2 {
+    text-align: center;
+}
+
+input {
+    position: absolute;
+    left: 150px;
+    height: 20px;
+    width: 250px;
+}
+
+select {
+    position: absolute;
+    left: 150px;
+    height: 20px;
+}
+
+label {
+    position: absolute;
+    left: 40px;
+}
+
+.in2 {
+    position: absolute;
+    top: 130px;
+}
+
+.in3 {
+    position: absolute;
+    top: 170px;
+}
+
+.in4 {
+    position: absolute;
+    top: 210px;
+}
+
+.in5 {
+    position: absolute;
+    top: 250px;
+}
+
+.in6 {
+    position: absolute;
+    top: 290px;
+}
+
+#save, #saveUp {
+    position: absolute;
+    bottom: 30px;
+    width: 80px;
+    height: 30px;
+    border-radius: 999px;
+}
+
+#reset {
+    position: absolute;
+    bottom: 30px;
+    left: 250px;
+    width: 80px;
+    height: 30px;
+    border-radius: 999px;
+}
+
+#save:hover, #saveUp:hover, #reset:hover {
+    background: orange;
+}
+
