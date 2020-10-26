@@ -69,7 +69,6 @@ function updateRows() {
     if (fullnameU.value !== '' && ageU.value !== ''
         && departU.value !== '' && emailU.value !== '' && phoneU.value !== '') {
         if (ageU.value >= 18 && ageU.value <= 70) {
-            if (typeof phoneU.value == 'number') {
                 if (phoneU.value.length >= 9 && phoneU.value.length <= 12) {
                     table.rows[rIndex].cells[1].innerHTML = fullnameU.value;
                     table.rows[rIndex].cells[2].innerHTML = ageU.value;
@@ -80,9 +79,6 @@ function updateRows() {
                 } else {
                     alert('Nhap so dien thoai tu 9 - 12 so')
                 }
-            } else {
-                alert('So dien thoai phai la so')
-            }
         } else {
             alert('Nhap tuoi tu 18 - 70')
         }
