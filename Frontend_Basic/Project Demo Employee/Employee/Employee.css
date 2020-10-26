@@ -60,18 +60,13 @@ table {
     margin: 0 auto;
     font-family: 'Open Sans', sans-serif;
     position: static;
+    text-align: center;
 }
 
-#icon-delete, #icon-update{
+#icon-delete, #icon-update, #icon-save {
     width: 30px;
     height: 30px;
     display: inline-block;
-}
-
-#icon-save {
-    width: 30px;
-    height: 30px;
-    position: absolute;
 }
 
 table tr:not(:first-child) {
